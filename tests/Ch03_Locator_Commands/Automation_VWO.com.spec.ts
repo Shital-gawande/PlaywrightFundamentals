@@ -7,6 +7,7 @@ test('verify error msg on app.vwo.com', async ({page}) =>{
     let password = page.locator("#login-password");
     let loginButton = page.locator("#js-login-btn");
 
+    // NOW Playwright finds the element and acts (auto-wait)
     await userName.fill("Admin");
     await password.fill("pass123");
     await loginButton.click();
