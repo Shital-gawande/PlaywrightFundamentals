@@ -16,4 +16,4 @@ test('goto waitunitil options', async({page})=>{
     await page.goto("https://app.com/page4", { waitUntil: "networkidle" });
     console.log("networkidle: no requests for 500ms");
 
-})
+});
