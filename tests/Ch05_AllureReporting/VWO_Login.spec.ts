@@ -1,14 +1,14 @@
 import { test, expect } from '@playwright/test';
 import * as allure from "allure-js-commons";
 
-test('verify taht login works fine', async({page})=>{
+test('verify that login works fine', async({page})=>{
 
     await allure.epic("VWO Login Tests");
     await allure.description("Verify that the login is page work");
     await allure.feature("Essential features");
     await allure.story("Authentication");
 
-     await page.goto("https://app.vwo.com/#login");
+    await page.goto("https://app.vwo.com/#login");
     await page.waitForTimeout(2000);
 
     await page.fill("#login-username", "opg73@singleuseemail.site");

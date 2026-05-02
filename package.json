@@ -26,6 +26,7 @@
     "allure-playwright": "^3.7.1"
   },
   "dependencies": {
+    "allure-commandline": "^2.38.1",
     "tslint": "^5.20.1",
     "typescript": "^6.0.3"
   },
