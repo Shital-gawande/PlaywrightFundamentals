@@ -22,7 +22,8 @@
   "homepage": "https://github.com/Shital-gawande/PlaywrightFundamentals#readme",
   "devDependencies": {
     "@playwright/test": "^1.59.1",
-    "@types/node": "^25.6.0"
+    "@types/node": "^25.6.0",
+    "allure-playwright": "^3.7.1"
   },
   "dependencies": {
     "tslint": "^5.20.1",
