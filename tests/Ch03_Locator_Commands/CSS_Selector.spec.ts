@@ -29,4 +29,4 @@ test('Css selector demo', async ({ page }) =>{
         console.log(span_ith);
     }
 
-})
+});
