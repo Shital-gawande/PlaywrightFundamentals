@@ -8,10 +8,10 @@ test('verify error message', async ({ page }) => {
 
     // 2. Fill the email field
     await page.locator('#page-v1-step1-email').fill('Shital@gmail.com');
-
-    // 3. Trigger the error (Validation usually happens when you click away or press Enter)
-    await page.keyboard.press('Enter');
-
+    //3
+    await page.locator('[name="gdpr_consent_checkbox"]').first().check();
+    //await page.keyboard.press('Enter');
+    await page.getByRole('button',{name: 'Create a Free Trial Account'}).click();
     // 4. Locate the error element
     const errorLocator = page.getByText("doesn't look like a business domain", { exact: false });
 
