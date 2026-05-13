@@ -1,7 +1,7 @@
 
 # Playwright Fundamentals
 
-A comprehensive Playwright testing project demonstrating end-to-end testing with TypeScript, including test automation, locator strategies, session storage, and Allure reporting.
+A comprehensive learning project for mastering Playwright testing framework. This project demonstrates modern web automation practices with TypeScript, covering end-to-end testing, advanced locator strategies, state management, and professional reporting with Allure integration. Ideal for developers looking to build robust and scalable test automation solutions.
 
 ## Project Structure
 
