@@ -2,7 +2,7 @@ import {test, expect} from '@playwright/test';
 
 test("Iframe testing", async ({page}) =>{
 
-    page.goto('https://app.thetestingacademy.com/playwright/frames/');
+    await page.goto('https://app.thetestingacademy.com/playwright/frames/');
     const frame1 = page.frameLocator('#frame-one');
     await frame1.locator('#RESULT_TextField-1').fill('Hyundai');
 
