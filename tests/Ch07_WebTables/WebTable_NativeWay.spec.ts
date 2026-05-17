@@ -10,7 +10,7 @@ test.describe('Webtable handling playwright way', ()=>{
 
         const rowCount = await rows.count();
 
-        for(let i= 1;i<=rowCount; i++){
+        for(let i= 0;i<rowCount; i++){
 
            const data = await rows.nth(i).locator('td').allInnerTexts();
            console.log(`Row ${i} data is - ${data}`);
