@@ -7,23 +7,54 @@ A comprehensive learning project for mastering Playwright testing framework. Thi
 
 ```
 PlaywrightFundamentals/
-├── tests/                          # Main test modules organized by topic
-│   ├── Ch01_Basic/                # Chapter 1: Basic Playwright concepts
-│   ├── Ch02_First_Tests/          # Chapter 2: Writing first tests
-│   ├── Ch03_Locator_Commands/     # Chapter 3: Locator and command strategies
-│   ├── Ch04_Session_Storage/      # Chapter 4: Session and storage handling
-│   ├── Ch05_AllureReporting/      # Chapter 5: Allure reporting integration
-│   ├── Projects/                  # Project-based test examples
-│   └── Tasks/                     # Task-based test implementations
-├── e2e/                           # End-to-end test specifications
-│   └── example.spec.ts           # Example E2E test file
-├── playwright-report/            # Playwright test report (generated)
-├── test-results/                 # Test results (generated)
-├── allure-results/               # Allure report results (generated)
-├── playwright.config.ts          # Playwright configuration
-├── package.json                  # Project dependencies and scripts
-├── tsconfig.json                 # TypeScript configuration
-└── README.md                     # This file
+├── tests/                                      # Main test modules organized by chapters
+│   ├── Ch01_Basic/                            # Chapter 1: Basic Playwright concepts
+│   │   ├── basic.spec.ts                      # Basic test examples
+│   │   └── Test_Annotation.spec.ts            # Test annotations and metadata
+│   │
+│   ├── Ch02_First_Tests/                      # Chapter 2: Writing and managing tests
+│   │   ├── First_Running_Test.spec.ts         # Your first test execution
+│   │   ├── Browser_Context_Pages.spec.ts     # Managing browser contexts and pages
+│   │   ├── Multiple_Pages.spec.ts            # Working with multiple page instances
+│   │   ├── MultipleContext.spec.ts           # Managing multiple contexts
+│   │   ├── Manual_Context.spec.ts            # Manual context configuration
+│   │   ├── manualContext_Options.spec.ts     # Advanced context options
+│   │   ├── Reusing_Context.spec.ts           # Reusing contexts across tests
+│   │   └── TestPW.spec.ts                    # Test Playwright utilities
+│   │
+│   ├── Ch03_Locator_Commands/                # Chapter 3: Locator strategies & commands
+│   │   ├── CSS_Selector.spec.ts              # CSS selector strategies
+│   │   ├── Xpath.spec.ts                     # XPath selector strategies
+│   │   ├── GetByRole.spec.ts                 # Accessible locators using getByRole
+│   │   ├── GotoCommands.spec.ts              # Navigation and goto commands
+│   │   ├── GotoCommands2.spec.ts             # Advanced goto scenarios
+│   │   ├── PressSequentially.spec.ts         # Sequential keyboard input
+│   │   ├── Cookies.spec.ts                   # Cookie management
+│   │   ├── Automation_VWO.com.spec.ts        # Real-world automation example
+│   │   └── Index.html                        # Test HTML fixture
+│   │
+│   ├── Ch04_Session_Storage/                 # Chapter 4: Session & storage handling
+│   │   └── (Test files for state persistence)
+│   │
+│   ├── Ch05_AllureReporting/                 # Chapter 5: Allure reporting integration
+│   │   └── (Test files with Allure annotations)
+│   │
+│   ├── Projects/                             # Project-based test examples
+│   │   └── (Real-world project implementations)
+│   │
+│   └── Tasks/                                # Task-based test implementations
+│       └── (Guided task exercises)
+│
+├── e2e/                                      # End-to-end test specifications
+│   └── example.spec.ts                      # Example E2E test template
+│
+├── playwright-report/                        # Playwright test report (generated)
+├── test-results/                             # Test results artifacts (generated)
+├── allure-results/                           # Allure report results (generated)
+├── playwright.config.ts                      # Playwright configuration & browser settings
+├── package.json                              # Project dependencies and npm scripts
+├── tsconfig.json                             # TypeScript configuration
+└── README.md                                 # This file
 
 ## Technologies & Dependencies
 
